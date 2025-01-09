@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fasthand&family=Oswald:wght@200;700&family=Roboto:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+    transition: .2s linear;
+}
+
+:root {
+    --bg: #010103;
+    --black: #13131a;
+    --text-color: #ededed;
+    --main-color: #D4AF37;
+    --border: .1rem solid #D4AF37;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text-color);
+}
+
+/* General responsiveness for font sizes and padding */
+@media (max-width: 991px) {
+    html {
+        font-size: 90%;
+    }
+
+    section {
+        padding: 8rem 4%;
+    }
+
+    .home, .about, .footer {
+        padding: 3rem 4%;
+    }
+}
+
+/* About Section */
+.about {
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 4%;
+    margin-top: 0;
+}
+
+.paregraph .para p {
+    padding: 50px 10%;
+    text-align: justify;
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin-bottom: 35px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .paregraph .para p {
+        padding: 20px 5%;
+    }
+}
+
+/* Section 2: Vision Section */
+.navsection {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.vision-sub-heading {
+    text-align: center;
+    padding: 1rem 2rem;
+    margin: 0 auto;
+}
+
+.vision-sub-heading h1 {
+    font-size: 2rem;
+    position: relative;
+}
+
+.vision-sub-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+}
+
+.container-imp {
+    padding: 2rem;
+}
+
+.about-imp {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-image-imp img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.para1 {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.para1 p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Global styles for responsive images */
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* General container responsiveness */
+  .container, .container1, .container2 {
+    padding: 15px;
+    margin: auto;
+  }
+  
+ 
+  
+/* Mission Section */
+.navsection1 {
+    padding: 2rem 4%;
+}
+
+.section22 {
+    padding: 2rem 0;
+}
+
+.mission {
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+    padding: 2rem;
+}
+
+.mission .mission-heading {
+    text-align: center;
+    padding: 1rem;
+}
+
+.mission .mission-heading h1 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.mission .mission-heading h1::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+}
+
+.para2 p {
+    text-align: justify;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 550;
+    margin-bottom: 1rem;
+}
+
+/* Card Section */
+.cardbox {
+    width: 100%;
+    padding: 2rem 4%;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.section-title h1 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.section-title h1::after {
+    content: " ";
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    margin: 0 auto;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+}
+
+.about-container .card {
+    flex: 1 1 45%;
+    max-width: 400px;
+    background: #000;
+    border-radius: 7px;
+    border: var(--border);
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.about-container .card:hover {
+    box-shadow: 0 20px 30px rgba(187, 137, 29, 0.6);
+    transform: scale(1.05);
+}
+
+.about-container .card .imgbx {
+    height: 150px;
+    background-image: linear-gradient(to right, #ae8625, #f7ef8a, #d2ac47, #edc967);
+}
+
+.about-container .card .para {
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-color);
+}
+
+
+/* Responsive adjustments for smaller devices */
+@media (max-width: 768px) {
+    .mission .mission-heading h1 {
+        font-size: 1.5rem;
+    }
+
+    .para2 p {
+        font-size: 0.9rem;
+    }
+
+    .about-container {
+        flex-direction: column; /* Stack the cards vertically */
+        gap: 1rem; /* Reduce the gap for smaller screens */
+    }
+
+    .about-container .card {
+        flex: 1 1 100%; /* Make cards take full width */
+        max-width: 100%; /* Remove width constraints */
+    }
+
+    .about-container .card .imgbx {
+        height: 120px; /* Adjust image height for smaller screens */
+    }
+
+    .about-container .card .para {
+        font-size: 0.8rem; /* Smaller font for better readability */
+    }
+}
+
+/* Responsive adjustments for extra-small devices */
+@media (max-width: 576px) {
+    .mission {
+        padding: 1rem; /* Reduce padding */
+    }
+
+    .mission .mission-heading h1 {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    .about-container {
+        gap: 0.5rem; /* Reduce gap further */
+    }
+
+    .about-container .card {
+        padding: 0.5rem; /* Add padding for smaller screens */
+    }
+
+    .about-container .card .imgbx {
+        height: 100px; /* Further adjust image height */
+    }
+
+    .about-container .card .para {
+        font-size: 0.7rem; /* Smaller text for compact layout */
+    }
+}
+
+/* Contact Section */
+.contact {
+    padding: 2rem 4%;
+    text-align: center;
+}
+
+.first_col {
+    background-color: #2E2E2E;
+    margin: 2rem auto;
+    padding: 2rem;
+    border: var(--border);
+    border-radius: 20px;
+    max-width: 550px;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: var(--border);
+    color: #fff;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Footer */
+.footer-distributed {
+    background-color: #2d2a30;
+    padding: 2rem;
+    text-align: center;
+    color: #8f9296;
+}
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+}
+
+.footer-distributed .footer-icons a:hover {
+    background-color: #D4AF37;
+}
+
+/* General Media Queries */
+@media (max-width: 768px) {
+    .about-imp {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-container .card {
+        flex: 1 1 90%;
+    }
+
+    .first_col {
+        padding: 1rem;
+    }
+}
